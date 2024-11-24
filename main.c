@@ -13,6 +13,8 @@ char criar_placa(char placa[8]){
         placa[i] = '0' + (rand() % 10); 
     }
     placa [7]='\0';
+
+    return placa[8];
 }
 
 
@@ -22,7 +24,7 @@ int verificacao_de_placas(char lista_placas[][8], char placa[8], int quantidade_
         if (strcmp(lista_placas[i], placa) == 0){
             return 1; 
         }}
-    return 0; 
+    return 0;  
 }
 
 
